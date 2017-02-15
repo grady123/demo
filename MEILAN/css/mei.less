@@ -51,12 +51,13 @@ li{
   height: 26px;
   line-height: 26px ;
 }
-.top-nav-r lu li {
+.qr {
   float: right;
   height: 26px;
   line-height: 26px;
 }
-.top-nav-r lu li a {
+.qr a {
+  display: inline-block;
   padding:0 10px;
   background: url("../images/sj.png") right no-repeat;
 }
@@ -135,22 +136,22 @@ li{
         line-height: 28px;
         padding-left: 39px;
       }
-      li:nth-child(1){
+      li:first-child{
         background: url("../images/icon_1.png")  no-repeat 10px ;
       }
-      li:nth-child(2){
+      li:first-child+li{
         background: url("../images/icon_2.png")  no-repeat 10px ;
       }
-      li:nth-child(3){
+      li:first-child+li+li{
         background: url("../images/icon_3.png")  no-repeat 10px ;
       }
-      li:nth-child(4){
+      li:first-child+li+li+li{
         background: url("../images/icon_4.png")  no-repeat 10px ;
       }
-      li:nth-child(5){
+      li:first-child+li+li+li+li{
         background: url("../images/icon_5.png")  no-repeat 10px ;
       }
-      li:nth-child(6){
+      li:first-child+li+li+li+li+li{
         background: url("../images/icon_6.png")  no-repeat 10px ;
       }
     }
@@ -181,8 +182,11 @@ li{
     .shangbu{
       overflow: hidden;
       .di1{
+        display: inline-block;
         margin-top: 15px;
         margin-left: 26px;
+        width: 330px;
+        //overflow: hidden;
         .zuo1{
           .shang1{
             width: 97px;
@@ -204,8 +208,8 @@ li{
           }
         }
         .you1{
-          margin-left: 6px;
-          margin-right: 20px;
+          margin-left: 4px;
+          //margin-right: 20px;
           p{
             font-size: 15px;
             margin-top: 10px;
@@ -221,7 +225,7 @@ li{
             color: #FF0000;
             line-height: 55px;
             span{
-              font-size: 3px;
+              font-size: 12px;
               color: #555555;
               font-weight: 400;
               text-decoration:line-through;
@@ -369,14 +373,11 @@ li{
         border-right: 1px solid #CCCCCC;
       }
     }
-    p:nth-last-of-type(1){
+    .ppp{
       line-height: 37px ;
     }
   }
 }
-
-
-
 
 
 

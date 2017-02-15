@@ -64,12 +64,13 @@ li {
   height: 26px;
   line-height: 26px ;
 }
-.top-nav-r lu li {
+.qr {
   float: right;
   height: 26px;
   line-height: 26px;
 }
-.top-nav-r lu li a {
+.qr a {
+  display: inline-block;
   padding: 0 10px;
   background: url("../images/sj.png") right no-repeat;
 }
@@ -150,22 +151,22 @@ li {
   line-height: 28px;
   padding-left: 39px;
 }
-.shangji .zuo ul li:nth-child(1) {
+.shangji .zuo ul li:first-child {
   background: url("../images/icon_1.png") no-repeat 10px;
 }
-.shangji .zuo ul li:nth-child(2) {
+.shangji .zuo ul li:first-child + li {
   background: url("../images/icon_2.png") no-repeat 10px;
 }
-.shangji .zuo ul li:nth-child(3) {
+.shangji .zuo ul li:first-child + li + li {
   background: url("../images/icon_3.png") no-repeat 10px;
 }
-.shangji .zuo ul li:nth-child(4) {
+.shangji .zuo ul li:first-child + li + li + li {
   background: url("../images/icon_4.png") no-repeat 10px;
 }
-.shangji .zuo ul li:nth-child(5) {
+.shangji .zuo ul li:first-child + li + li + li + li {
   background: url("../images/icon_5.png") no-repeat 10px;
 }
-.shangji .zuo ul li:nth-child(6) {
+.shangji .zuo ul li:first-child + li + li + li + li + li {
   background: url("../images/icon_6.png") no-repeat 10px;
 }
 .shangji .you {
@@ -195,8 +196,10 @@ li {
   overflow: hidden;
 }
 .shangpin .zuo .shangbu .di1 {
+  display: inline-block;
   margin-top: 15px;
   margin-left: 26px;
+  width: 330px;
 }
 .shangpin .zuo .shangbu .di1 .zuo1 .shang1 {
   width: 97px;
@@ -214,8 +217,7 @@ li {
   margin-top: 15px;
 }
 .shangpin .zuo .shangbu .di1 .you1 {
-  margin-left: 6px;
-  margin-right: 20px;
+  margin-left: 4px;
 }
 .shangpin .zuo .shangbu .di1 .you1 p {
   font-size: 15px;
@@ -233,7 +235,7 @@ li {
   line-height: 55px;
 }
 .shangpin .zuo .shangbu .di1 .you1 i span {
-  font-size: 3px;
+  font-size: 12px;
   color: #555555;
   font-weight: 400;
   text-decoration: line-through;
@@ -369,6 +371,6 @@ li {
   padding: 0 10px  0  10px ;
   border-right: 1px solid #CCCCCC;
 }
-.jiewei .guanyu p:nth-last-of-type(1) {
+.jiewei .guanyu .ppp {
   line-height: 37px ;
 }
